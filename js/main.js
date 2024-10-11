@@ -4,7 +4,7 @@
 new Swiper('.testimonials__slider', {
     spaceBetween: 0,
     slidesPerView: 1,
-    initialSlide: 1,
+    initialSlide: 0,
 
 
     navigation: {
