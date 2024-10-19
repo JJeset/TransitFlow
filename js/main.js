@@ -22,3 +22,18 @@ new Swiper('.testimonials__slider', {
     }
 
 });
+
+
+document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', () => {
+        const clickedItem = question.parentNode;
+        
+        document.querySelectorAll('.faq-item').forEach(item => {
+            if (item !== clickedItem && item.classList.contains('active')) {
+                item.classList.remove('active');
+            }
+        });
+        
+        clickedItem.classList.toggle('active');
+    });
+});

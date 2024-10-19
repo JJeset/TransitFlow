@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TransitFlow</title>
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/stylesheet.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
@@ -147,8 +146,8 @@
                         </div>
                     </div>
                     <div class="subheader__main">
-                        <div class="subheader__subtitle-bg">
-                            <div class="subheader__subtitle">
+                        <div class="subheader__subtitle-bg subtitle-bg">
+                            <div class="subheader__subtitle subtitle">
                                 Logistics & Supply Chain Solutions
                             </div>
                         </div>
@@ -173,8 +172,8 @@
         <div class="container">
             <div class="about__inner">
                 <div class="about__left">
-                    <div class="about__subtitle-bg">
-                        <div class="about__subtitle">
+                    <div class="about__subtitle-bg subtitle-bg">
+                        <div class="about__subtitle subtitle">
                             What We Do
                         </div>
                     </div>
@@ -389,8 +388,8 @@
                 <div class="whyus__inner">
                     <div class="whyus__left">
                         <div class="whyus__left-content">
-                            <div class="whyus__left-subtitle-bg">
-                                <div class="whyus__left-subtitle">
+                            <div class="whyus__left-subtitle-bg subtitle-bg">
+                                <div class="whyus__left-subtitle subtitle">
                                     Why Us
                                 </div>
                             </div>
@@ -545,19 +544,20 @@
                             </li>
                         </ul>
                         <button class="whyus__trans-button button">
-                            <div class="whyus__button-text">More Work</div>
+                            <div class="whyus__button-text button__text">More Work</div>
                         </button>
                     </div>
                 </div>
             </div>
+            <div class="whyus__bg"></div>
         </div>
     </section>
     <section class="testimonials">
         <div class="container">
             <div class="testimonials__top">
                 <div class="testimonials__toptitles">
-                    <div class="testimonials__subtitle-bg">
-                        <div class="testimonials__subttitle">
+                    <div class="testimonials__subtitle-bg subtitle-bg">
+                        <div class="testimonials__subttitle subttitle">
                             Testimonial
                         </div>
                     </div>
@@ -1054,8 +1054,8 @@
             </div>
             </div>
             <div class="whychoo__right">
-                <div class="whychoo__subtitle-bg">
-                    <div class="whychoo__subtitle">Why Choose</div>
+                <div class="whychoo__subtitle-bg subtitle-bg">
+                    <div class="whychoo__subtitle subtitle">Why Choose</div>
                 </div>
                 <div class="whychoo__title">We create opportunity to reach potential</div>
                 <div class="whychoo__text">Leverage agile frameworks to provide a robust synopsis for strategy
@@ -1205,8 +1205,8 @@
         <div class="container">
             <div class="transporters__inner">
                 <div class="transporters__head">
-                    <div class="transporters-subtitle-bg">
-                        <div class="transporters-subtitle">
+                    <div class="transporters-subtitle-bg subtitle-bg">
+                        <div class="transporters-subtitle subtitle">
                             The Transporters
                         </div>
                     </div>
@@ -1351,8 +1351,8 @@
         <div class="container">
             <div class="contact-wrapper">
                 <div class="contact-info">
-                    <div class="contact__subtitle-bg">
-                        <div class="contact__subtitle">Contact</div>
+                    <div class="contact__subtitle-bg subtitle-bg">
+                        <div class="contact__subtitle subtitle">Contact</div>
                     </div>
                     <div class="contact__title">Get in touch with us</div>
                     <div class="contact__text">Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value.</div>
@@ -1421,7 +1421,9 @@
                         <div class="form-group-message">
                             <textarea placeholder="Your Message"></textarea>
                         </div>
-                        <button class="contact__button" type="submit">Submit Message</button>
+                        <button class="contact__button button" type="submit">
+                            <div class="button__text">Submit Message</div>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -1432,64 +1434,196 @@
     </section>
     <section class="blog">
         <div class="container">
-            <div class="blog-header">
-                <span class="blog-label">Our Blog</span>
-                <h1 class="blog-title">Our Latest News</h1>
-            </div>
-            <div class="blog-posts">
-                <article class="blog-post">
-                    <img src="./img/content/blog1.png" alt="">
-                    <div class="blog-content">
+            <div class="blog__inner">
+                <div class="blog-header">
+                    <div class="blog__subtitle-bg subtitle-bg">
+                        <div class="blog__subtitle subtitle">Our Blog</div>
+                    </div>
+                    <div class="blog-title">Our Latest News</div>
+                </div>
+                <div class="blog-posts">
+                    <article class="blog-post">
+                        <a class="blog-post-pic" href="#">
+                            <img src="./img/content/blog1.png" alt="">
+                            <div class="blog-read">Read More</div>
+                        </a>
                         <div class="date-icon">
+                            <img src="./img/icons/calendar.png" alt="">
+                            
                             <span class="date-day">08</span>
                             <span class="date-month">September</span>
                         </div>
-                        <h2 class="blog-post-title">Inland freight a worthy solution for your business</h2>
-                        <p class="blog-description">We are dedicated to creating added value for our customers by implementing modern technology in our work.</p>
-                        <ul class="blog-points">
-                            <li>Urgent transport solutions</li>
-                            <li>Reliable & experienced staffs</li>
-                            <li>Urgent transport solutions</li>
-                            <li>Reliable & experienced staffs</li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="blog-post">
-                    <img src="./img/content/blog2.png" alt="">
-                    <div class="blog-content">
+                        <div class="blog-content">
+                            <h2 class="blog-post-title">Inland freight a worthy solution for your business</h2>
+                            <p class="blog-description">We are dedicated to creating added value for our customers by implementing modern technology in our work.</p>
+                            <ul class="blog-points">
+                                <li>Urgent transport solutions</li>
+                                <li>Reliable & experienced staffs</li>
+                                <li>Urgent transport solutions</li>
+                                <li>Reliable & experienced staffs</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="blog-post">
+                        <a class="blog-post-pic" href="#">
+                            <img src="./img/content/blog2.png" alt="">
+                            <div class="blog-read">Read More</div>
+                        </a>
                         <div class="date-icon">
+                            <img src="./img/icons/calendar.png" alt="">
+                            
                             <span class="date-day">12</span>
                             <span class="date-month">September</span>
                         </div>
-                        <h2 class="blog-post-title">How technology can help redraw the supply chain map</h2>
-                        <p class="blog-description">We are dedicated to creating added value for our customers by implementing modern technology in our work.</p>
-                        <ul class="blog-points">
-                            <li>Urgent transport solutions</li>
-                            <li>Reliable & experienced staffs</li>
-                            <li>Urgent transport solutions</li>
-                            <li>Reliable & experienced staffs</li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="blog-post">
-                    <img src="./img/content/blog3.png" alt="">
-                    <div class="blog-content">
+                        <div class="blog-content">
+                            <h2 class="blog-post-title">How technology can help redraw the supply chain map</h2>
+                            <p class="blog-description">We are dedicated to creating added value for our customers by implementing modern technology in our work.</p>
+                            <ul class="blog-points">
+                                <li>Urgent transport solutions</li>
+                                <li>Reliable & experienced staffs</li>
+                                <li>Urgent transport solutions</li>
+                                <li>Reliable & experienced staffs</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="blog-post">
+                        <a class="blog-post-pic" href="#">
+                            <img src="./img/content/blog3.png" alt="">
+                            <div class="blog-read">Read More</div>
+                        </a>
                         <div class="date-icon">
+                            <img src="./img/icons/calendar.png" alt="">
+                            
                             <span class="date-day">25</span>
                             <span class="date-month">September</span>
                         </div>
-                        <h2 class="blog-post-title">Five things you should have ready for your broker</h2>
-                        <p class="blog-description">We are dedicated to creating added value for our customers by implementing modern technology in our work.</p>
-                        <ul class="blog-points">
-                            <li>Urgent transport solutions</li>
-                            <li>Reliable & experienced staffs</li>
-                            <li>Urgent transport solutions</li>
-                            <li>Reliable & experienced staffs</li>
-                        </ul>
-                    </div>
-                </article>
+                        <div class="blog-content">
+                            <h2 class="blog-post-title">Five things you should have ready for your broker</h2>
+                            <p class="blog-description">We are dedicated to creating added value for our customers by implementing modern technology in our work.</p>
+                            <ul class="blog-points">
+                                <li>Urgent transport solutions</li>
+                                <li>Reliable & experienced staffs</li>
+                                <li>Urgent transport solutions</li>
+                                <li>Reliable & experienced staffs</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+                <div class="blog__button-pos">
+                    <button class="blog__button button">
+                        <div class="blog__button-text">More Blog</div>
+                    </button>
+                </div>
             </div>
-            <button class="more-blog">More Blog</button>
+        </div>
+    </section>
+    <section class="faq">
+        <div class="container">
+            <div class="faq-inner">
+                <div class="faq-section">
+                    <div class="subtitle-bg">
+                        <div class="faq-subtitle subtitle">FAQ</div>
+                    </div>
+                    <h1 class="faq-title">Frequently Asked Questions</h1>
+                    <div class="faq-item active">
+                        <div class="faq-question">
+                            How can I pay for your logistics services?
+                            <span class="faq-toggle">
+                                <svg width="10.003906" height="18.008179" viewBox="0 0 10.0039 18.0082" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <desc>
+                                            Created with Pixso.
+                                    </desc>
+                                    <defs/>
+                                    <path id="Vector" d="M1 1L9 9L1 17" stroke="#1C1F35" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
+                                </svg>
+                                
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What payment methods are supported?
+                            <span class="faq-toggle">
+                                <svg width="10.003906" height="18.008179" viewBox="0 0 10.0039 18.0082" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <desc>
+                                            Created with Pixso.
+                                    </desc>
+                                    <defs/>
+                                    <path id="Vector" d="M1 1L9 9L1 17" stroke="#1C1F35" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
+                                </svg>
+                                
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            We support various payment methods including credit cards, bank transfers, and online payment platforms. Details will be provided upon service agreement.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What options for logistics plans are available?
+                            <span class="faq-toggle">
+                                <svg width="10.003906" height="18.008179" viewBox="0 0 10.0039 18.0082" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <desc>
+                                            Created with Pixso.
+                                    </desc>
+                                    <defs/>
+                                    <path id="Vector" d="M1 1L9 9L1 17" stroke="#1C1F35" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
+                                </svg>
+                                
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            We offer a range of logistics plans tailored to different business needs, from small-scale operations to large enterprises. Contact us for a personalized plan.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Can I specify a delivery date when ordering?
+                            <span class="faq-toggle">
+                                <svg width="10.003906" height="18.008179" viewBox="0 0 10.0039 18.0082" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <desc>
+                                            Created with Pixso.
+                                    </desc>
+                                    <defs/>
+                                    <path id="Vector" d="M1 1L9 9L1 17" stroke="#1C1F35" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
+                                </svg>
+                                
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            Yes, you can specify a preferred delivery date when placing an order. We'll do our best to accommodate your request based on availability and logistics constraints.
+                        </div>
+                    </div>
+                </div>
+                <div class="image-section">
+                    <div class="image-section-subtitle-bg subtitle-bg">
+                        <div class="image-section-subtitle subtitle">
+                            Let's talk
+                        </div>
+                    </div>
+                    <div class="overlay">
+                        <h2>You Need Any Help? Get Free Consultation</h2>
+                        <div class="contact-us-info">
+                            <div class="contact-us-icon">
+                                <svg width="19.000000" height="18.000244" viewBox="0 0 19 18.0002" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <desc>
+                                            Created with Pixso.
+                                    </desc>
+                                    <defs/>
+                                    <path id="Vector" d="M1.08 0.72C0.96 0.78 0.85 0.85 0.76 0.94C0.67 1.04 0.6 1.15 0.55 1.27C0.51 1.38 0.49 1.51 0.5 1.64C0.63 3.8 1.27 9.07 4.3 12.35C7.94 16.31 12.67 17.68 17.53 17.48C17.79 17.46 18.03 17.35 18.21 17.18C18.39 17 18.49 16.77 18.5 16.52L18.5 13.06C18.49 12.74 18.37 12.43 18.16 12.18C17.94 11.92 17.64 11.75 17.31 11.67L14.88 11.17C14.57 11.11 14.26 11.13 13.98 11.24C13.69 11.35 13.45 11.54 13.28 11.78L12.74 12.54C12.69 12.61 12.62 12.66 12.53 12.69C12.44 12.71 12.35 12.71 12.27 12.67C11.03 12.17 6.1 10.01 5.56 6.37C5.55 6.3 5.56 6.23 5.6 6.16C5.63 6.1 5.68 6.05 5.75 6.01L6.72 5.45C6.99 5.3 7.2 5.07 7.32 4.8C7.45 4.53 7.48 4.23 7.42 3.94L6.88 1.62C6.8 1.29 6.61 1 6.33 0.8C6.05 0.59 5.7 0.49 5.35 0.5L1.47 0.64C1.33 0.64 1.2 0.67 1.08 0.72Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.000000"/>
+                                </svg>
+                            </div>
+                            <div>Have Any Questions<br>(00) 112 365 489</div>
+                        </div>
+                        <button class="contact-us__button button">
+                            <div class="button__text">Contact Us</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
