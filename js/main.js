@@ -24,16 +24,35 @@ new Swiper('.testimonials__slider', {
 });
 
 
-document.querySelectorAll('.faq-question').forEach(question => {
-    question.addEventListener('click', () => {
-        const clickedItem = question.parentNode;
-        
-        document.querySelectorAll('.faq-item').forEach(item => {
-            if (item !== clickedItem && item.classList.contains('active')) {
-                item.classList.remove('active');
+
+const faqLists = document.querySelectorAll('.faq-content');
+
+    faqLists.forEach(el => {
+
+        el.addEventListener('click', (e) => {
+
+            const faqList = e.currentTarget
+            const faqOpenedItem = faqList.querySelector('.active')
+            const faqOpenedContent = faqList.querySelector('.active .faq-answer')
+            const faqControl = e.target.closest('.faq-question');
+            
+            if (!faqControl) return
+            e.preventDefault()
+            const faqItem = faqControl.parentElement;
+            const faqContent = faqControl.nextElementSibling;
+
+            if (faqOpenedItem && faqItem != faqOpenedItem) {
+                faqOpenedItem.classList.remove('active');
+                faqOpenedContent.style.maxHeight = null;
             }
+            faqItem.classList.toggle('active');
+
+            if (faqItem.classList.contains('active')) {
+                faqContent.style.maxHeight = faqContent.scrollHeight + 'px';
+            } else {
+                faqContent.style.maxHeight = null;
+            }
+
         });
-        
-        clickedItem.classList.toggle('active');
+
     });
-});

@@ -565,7 +565,7 @@ body {
     width: 100px;
     height: 0;
     left: -62px;
-    top: 73px;
+    top: 74px;
     transform: rotate(-90.00deg);
     border: 1px solid #d5d5d5;
 }
@@ -1433,17 +1433,21 @@ textarea {
 
 /* ====================================== */
 
+.faq {
+    height: 740px;
+    padding: 125px 0;
+    background: var(--color-secondary);
+}
 
 .faq-inner {
+    z-index: 1;
     display: flex;
+    position: relative;
 }
 
 .faq-section {
     max-width: 680px;
     width: 100%;
-    background-color: white;
-    padding: 40px;
-    border-radius: 8px;
 }
 
 
@@ -1463,12 +1467,17 @@ textarea {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: var(--transition);
 }
 
 .faq-answer {
-    display: none;
+    display: block;
     color: #666c89;
     line-height: 1.6;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: var(--transition);
 }
 
 .faq-toggle {
@@ -1478,10 +1487,12 @@ textarea {
 
 .faq-item {
     margin-bottom: 40px;
+    transition: var(--transition);
 }
 
 .faq-item.active .faq-toggle {
     transform: rotate(90deg);
+    transition: var(--transition);
 }
 
 .faq-item.active path {
@@ -1489,11 +1500,16 @@ textarea {
     transition: var(--transition);
 }
 
-.faq-item.active .faq-answer {
-    display: block;
+.faq-item.active .faq-answer  {
+    transition: var(--transition);
 }
 
-.image-section {
+.faq-item .faq-answer {
+    transition: var(--transition);
+}
+
+
+.contact-us-section {
     color: #ffffff;
     background-color: #091242;
     padding: 52px;
@@ -1502,9 +1518,18 @@ textarea {
     max-height: 368px;
     height: 100%;
     font-weight: 300;
+    margin: 60px 70px;
+    z-index: 1;
 }
 
-.image-section-subtitle-bg {
+.faq-bg {
+    position: absolute;
+    content: "";
+    left: 800px;
+    top: -30px;
+}
+
+.contact-us-section-subtitle-bg {
     background: #111C55;
 }
 
@@ -1514,7 +1539,9 @@ textarea {
     object-fit: cover;
 }
 
-.overlay {}
+.overlay {
+    z-index: 5;
+}
 
 .overlay h2 {
     font-size: 20px;
