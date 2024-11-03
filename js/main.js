@@ -26,28 +26,25 @@
 
 
 
-new Swiper('.testimonials__slider', {
-    spaceBetween: 0,
-    slidesPerView: 1,
-    centeredSlides: true,
-    initialSlide: 0,
+    new Swiper('.testimonials__slider', {
+        breakpointsBase: 'container',
+        spaceBetween: 0,
+        slidesPerView: 1,
+        centeredSlides: false,
+        initialSlide: 0,
 
 
-    navigation: {
-        nextEl: '.testimonials__next',
-        prevEl: '.testimonials__prev',
-    },
-
-    breakpoints: {
-        601: {
-            slidesPerView: 1,
-            centeredSlides: true,
+        navigation: {
+            nextEl: '.testimonials__next',
+            prevEl: '.testimonials__prev',
         },
-        1201: {
-            slidesPerView: 2,
-            centeredSlides: false
+
+        breakpoints: {
+            1001: {
+                slidesPerView: 2,
+                centeredSlides: false,
+            }
         }
-    }
 
 });
 
