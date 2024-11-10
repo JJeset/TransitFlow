@@ -563,7 +563,13 @@ body {
     align-items: center;
 }
 
-.whyus__left-list-icon {}
+.whyus__left-list-icon {
+    justify-content: center;
+    align-items: center;
+    max-height: 63px;
+    background: var(--gradient);
+    border-radius: 50%;
+}
 
 .whyus__left-list-title {
     margin-left: 15px;
@@ -588,7 +594,7 @@ body {
 
 .whyus__girl-pic {
     position: absolute;
-    left: -90px;
+    left: -110px;
     bottom: -50px;
 }
 
@@ -950,6 +956,7 @@ body {
 .whychoo {
     padding: 140px 0;
     background: url(../img/bg/wc-bg.png);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
 }
@@ -957,7 +964,7 @@ body {
 .container {}
 
 
-.whychoo__subtitle{
+.whychoo__subtitle {
     display: flex;
 }
 
@@ -1053,6 +1060,8 @@ body {
 .whychoo__grid-icon {
     display: flex;
     align-items: center;
+    background: var(--gradient);
+    border-radius: 50%;
 }
 
 .whychoo__grid-text {
@@ -1911,6 +1920,8 @@ textarea {
 @media (max-width: 1400px) {
 
 
+
+
     .whychoo__bar {
         bottom: -10%;
         left: 0;
@@ -1979,12 +1990,15 @@ textarea {
         flex-direction: column;
     }
 
+
+    .whyus__girl-pic {
+        display: none;
+
+    }
+
     .transporters {
         padding: 0;
     }
-}
-
-@media (max-width: 1200px) {
 
 
     .whyus__stat-list::after, .whyus__stat-list::before {
@@ -1999,7 +2013,6 @@ textarea {
 
     }
 
-
 }
 
 
@@ -2013,6 +2026,7 @@ textarea {
     .header__contact-item {
         max-width: 250px;
     }
+
 
 
     .nav {
@@ -2060,6 +2074,8 @@ textarea {
     }
 
 
+
+
 }
 
 
@@ -2070,8 +2086,7 @@ textarea {
         left: 14%;
     }
 
-    .second-stat-item {
-    }
+    .second-stat-item {}
 
     .contact-wrapper {
         flex-direction: column;
@@ -2195,6 +2210,10 @@ textarea {
 
 @media (max-width: 800px) {
 
+    .subheader__title {
+        font-size: 8vw;
+    }
+
 
     .about__item-icon::after {
         display: none;
@@ -2205,7 +2224,7 @@ textarea {
         flex-direction: column;
     }
 
-    .whychoo__subtitle, .whychoo__subtitle-bg{
+    .whychoo__subtitle, .whychoo__subtitle-bg {
         display: flex;
         max-width: 100px;
     }
