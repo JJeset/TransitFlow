@@ -956,6 +956,11 @@ body {
 
 .container {}
 
+
+.whychoo__subtitle{
+    display: flex;
+}
+
 .whychoo__wrapper {
     display: grid;
     grid-template-columns: 1.1fr .9fr;
@@ -1694,9 +1699,9 @@ textarea {
     display: flex;
     max-height: 120px;
     height: 100%;
-    gap: 125px;
+    gap: 167px;
     justify-content: start;
-    margin-left: 46vw;
+    margin-left: 45.4vw;
     padding-top: 40px;
 }
 
@@ -1825,7 +1830,7 @@ textarea {
 
 .footer-section-right {
     margin-top: 150px;
-    margin-right: -100px;
+    margin-right: -90px;
 }
 
 .footer-bottom {
@@ -1873,12 +1878,32 @@ textarea {
 
 
 @media (max-width: 1700px) {
+
+
     .whyus__trans-list {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         gap: 18px;
     }
+
+    .footer-left {
+        padding: 43px 80px 0px 40px;
+    }
+
+    .footer-light-titles {
+        gap: 181px;
+        margin-left: 40.4vw;
+    }
+
+    .footer-content {
+        gap: 20px;
+    }
+
+    .subscribe-form input[type="email"] {
+        width: 90%;
+    }
+
 }
 
 
@@ -1934,6 +1959,7 @@ textarea {
 
     .footer-section-right {
         margin-top: 20px;
+        width: 340px;
     }
 
     .footer-content {
@@ -2175,8 +2201,13 @@ textarea {
     }
 
     .whychoo__right {
-        display: flex;
+
         flex-direction: column;
+    }
+
+    .whychoo__subtitle, .whychoo__subtitle-bg{
+        display: flex;
+        max-width: 100px;
     }
 
     .whychoo__img-lowwidth, .whychoo__bar {
@@ -2239,6 +2270,10 @@ textarea {
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+
+    .footer-section-right, .subscribe-form {
+        max-width: 300px;
     }
 
     .subscribe-form input[type="email"] {
@@ -2381,14 +2416,17 @@ textarea {
         width: 100%;
     }
 
+    .footer-section-right, .subscribe-form {
+        max-width: 245px;
+    }
+
     .subscribe-form {
         width: 90%;
-
     }
 
 
     .subscribe-form input[type="email"] {
-        width: 80%;
+        width: 100%;
     }
 
     .footer-bottom {
