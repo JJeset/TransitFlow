@@ -624,7 +624,7 @@ body {
     width: 100%;
     display: flex;
     gap: 10px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 46px 100px;
 }
@@ -2404,6 +2404,7 @@ textarea {
 
 
     .whyus__stat-item {
+        justify-content: space-between;
         padding: 46px 0px;
     }
 
