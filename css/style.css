@@ -2336,6 +2336,10 @@ textarea {
     }
 
 
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
 
     .footer-content {
         display: grid;
